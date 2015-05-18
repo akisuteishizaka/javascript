@@ -15,13 +15,21 @@
 				return 返り値
 			}
 		 */
-		
+		/*
 		function hello(name) {
 			// body...
-			return "hello " + name;
-		}
+			var msg = "hello " + name; //　ローカル変数
+			return msg;
+		}*/
+
+		var hello = function (name) {//　無名関数、　匿名関数
+			// body...
+			var msg = "hello " + name; //　ローカル変数
+			return msg;
+		};
 		var greet = hello("tom");
 		console.log(greet);
+		// console.log(msg);
 
 	</script>
 </body>
