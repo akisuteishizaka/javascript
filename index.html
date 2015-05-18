@@ -7,7 +7,23 @@
 </head>
 <body>
 	<script type="text/javascript">
-		console.log("hello from javascript");
+		/*
+			タイマー処理
+			setInterval 前の処理が終わるかどうかは関係ない
+			setTimeout　前の処理が終わったかどうかを考慮してくれる
+		 */
+		var i = 0;
+		function show() {
+			console.log(i++);
+			var tid = setTimeout(function() {
+			show();
+		}, 1000);
+			if (i > 3){
+				clearTimeout(tid);
+			}
+		}
+		show();
+
 	</script>
 </body>
 </html>
