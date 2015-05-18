@@ -7,7 +7,24 @@
 </head>
 <body>
 	<script type="text/javascript">
-		console.log("hello from javascript");
+		/*
+			オブジェクト：　グループ化されたデータ
+				名前と値のペアがグループされている。
+
+		 */
+		var user = {
+			email: "taiti@stone-rise.com", // プロパティ　プロパティ名
+			score: 80,
+			greet: function(name) { //　メソッド
+				console.log("hello " + name + " form " + this.email);
+			}
+		};
+		console.log(user["email"]);
+		console.log(user.email);
+		user.score = 100;
+		console.log(user);
+		user.greet("Tom");
+
 	</script>
 </body>
 </html>
