@@ -7,7 +7,43 @@
 </head>
 <body>
 	<script type="text/javascript">
-		console.log("hello from javascript");
+		/*
+			組み込みオブジェクト
+
+
+			- String
+			- Array
+			- Math
+			- Date
+		 */
+		
+		// var s = new String("taiti");
+		var s = "taiti";// 文字列リテラル
+		console.log(s.length);
+		console.log(s.replace("t", "T"));
+		console.log(s.substr(1, 3));
+
+		var a = new Array(100, 300, 400);
+		// var a = [100, 300, 400]
+		console.log(a.length);
+		// unshift -> array <- push
+		// shift <- array -> pop
+		a.push(500);
+		console.log(a);
+		a.splice(1, 2, 800, 1000);
+		console.log(a);
+
+		console.log(Math.PI);
+		console.log(Math.ceil(5.3));
+		console.log(Math.floor(5.3));
+		console.log(Math.round(5.3));
+		console.log(Math.random());
+
+		var d = new Date();
+		// var d = new Date(2014, 1, 11, 10)
+		console.log(d.getFullYear());
+		console.log(d.getMonth());
+		console.log(d.getTime());
 	</script>
 </body>
 </html>
